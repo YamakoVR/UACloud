@@ -13,7 +13,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Bienvenue dans U.A. Cloud</a>
+        <a class="navbar-brand" href="">Bienvenue dans U.A. Cloud</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,25 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Rapports <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="Rapports.html">Rapports <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Créer un rapport</a>
+                    <a class="nav-link" href="CreationRapports.html">Créer un rapport</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Code Pénal</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Gérant
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Création de comptes</a>
-                        <a class="dropdown-item" href="#">Gestion des comptes</a>
-                    </div>
+                    <a class="nav-link" href="CodePenal.html">Code Pénal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Déconnexion</a>
+                    <a class="nav-link disabled" href="Connexion.html">Connexion</a>
                 </li>
             </ul>
         </div>
@@ -47,58 +38,97 @@
 </header>
 
 <body>
-
-    <form>
-        <div class="form-row">
-            <div class="col-md-4 mb-3">
-                <label for="validationServer01">Nom du vilain</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Ouafman" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationServer02">Rang du Vilain</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Rang F" required>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="validationServer02">Alter du Vilain</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Sang" required>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-2">
-                <label for="validationServerUsername">Âge du Vilain</label>
-                <div class="input-group">
-                <input type="number" class="form-control is-invalid" id="validationServerUsername" placeholder="16" aria-describedby="inputGroupPrepend3" required>
+    <div>
+        <div class="p-3" style="background-color: #eee;">
+            <form>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="col">
+                        <label for="validationServer01">Nom du vilain</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Ouafman" required>
+                    </div>
+                    <div class="col">
+                        <label for="validationServer02">Niveau de recherche du Vilain</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Vilain influent" required>
+                    </div>
                 </div>
-            </div>
-        </div>
-          <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="exampleFormControlTextarea1">Délits ou Crimes commis</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-          </div>
-          
-          <script src="../js/CreationRapports.js"></script>
-          <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
-            <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
-            <label id="upload-label" for="upload" class="font-weight-light text-muted">Photo du Vilain</label>
-            <div class="input-group-append">
-                <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choisir l'image</small></label>
-            </div>
-        </div>
+                <div class="form-row d-flex justify-content-center">
+                    <div class="col">
+                        <label for="validationServerUsername">Âge du Vilain</label>
+                        <div class="input-group">
+                        <input type="number" class="form-control is-invalid" id="validationServerUsername" placeholder="16" aria-describedby="inputGroupPrepend3" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label for="validationServer02">Alter du Vilain</label>
+                        <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Sang" required>
+                    </div>
+                </div>
+                <div class="form-row d-flex justify-content-center">
+                <div class="col">
+                    <label for="exampleFormControlTextarea1">Délits ou Crimes commis</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                
+                <script src="../js/CreationRapports.js"></script>
+                <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                    <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0">
+                    <label id="upload-label" for="upload" class="font-weight-light text-muted">Photo du Vilain</label>
+                    <div class="input-group-append">
+                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choisir l'image</small></label>
+                    </div>
+                </div>
 
-        <!-- Uploaded image area-->
-        <p class="font-italic text-white text-center">Affichage de l'image uploadé.</p>
-        <div class="image-area mt-4"><img id="imageResult" style="max-height: 30vh;" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+                <!-- Uploaded image area-->
+                <p class="font-italic text-white text-center">Affichage de l'image uploadé.</p>
+                <div class="image-area mt-4"><img id="imageResult" style="max-height: 30vh;" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
 
+                </div>
+
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-
-        </div>
-        
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </form>
 </body>
 
 <footer>
+    <div class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+        <div class="container">
+            <!-- Section: Links -->
+            <section class="mt-5">
+            <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="AboutUs.html" class="text-white">À propos de nous</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
 
+        <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    <p>
+                    Le site a pour but d'aider les héros et les membres de la CSP de rédiger et de voir les rapports des autres, via une interface fluide et visuelle plus abordable que la radio Discord de la CSP.
+                    </p>
+                </div>
+                </div>
+            </section>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+        © 2022 Copyright:
+        U.A. - Équipe U.A. Cloud
+        </div>
+    </div>
+    <!-- Copyright -->
 </footer>
